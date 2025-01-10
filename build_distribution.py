@@ -103,7 +103,8 @@ def main():
         selected_pools = st.multiselect(
             "Select Grant Pools to Display",
             options=all_pools,
-            default=all_pools[:1]  # Default to first pool
+            default=["GG20 - 25", "GG20 - 26", "GG20 - 27", "GG22 - 608", "GG22 - 609", "GG22 - 610", \
+                     "retropgf2", "retropgf3", "retrofunding4", "retrofunding5"]
         )
         
         # Show plot if pools are selected
