@@ -103,7 +103,7 @@ def main():
         selected_pools = st.multiselect(
             "Select Grant Pools to Display",
             options=all_pools,
-            default=["GG20 - 25", "GG20 - 26", "GG20 - 27", "GG22 - 608", "GG22 - 609", "GG22 - 610", \
+            default=["GG-20 - 25", "GG-20 - 26", "GG-20 - 27", "GG-22 - 608", "GG-22 - 609", "GG-22 - 610", \
                      "retropgf2", "retropgf3", "retrofunding4", "retrofunding5"]
         )
         
