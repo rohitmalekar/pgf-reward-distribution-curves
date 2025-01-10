@@ -88,7 +88,8 @@ def create_distribution_curve(df, selected_pools):
     return fig
 
 def main():
-    st.title("Grant Funding Distribution Analysis")
+    st.title("Reward Distribution Curves (Gitcoin, Optimism, Open Collective)")
+    st.caption("Powered by OSO")
     
     # Read data
     data_path = "./data/funding by round.csv"  # Update with your file path
