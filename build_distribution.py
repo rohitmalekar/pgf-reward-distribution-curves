@@ -85,6 +85,21 @@ def create_distribution_curve(df, selected_pools):
         width=800
     )
     
+    # Add vertical line at 20%
+    fig.add_vline(x=20, line_dash="dash", line_color="gray")
+    
+    # Add annotation for the vertical line
+    fig.add_annotation(
+        x=20,
+        y=90,  # Position the text high on the chart
+        text="Remaining funding after<br>allocating top 20% projects",
+        showarrow=True,
+        arrowhead=1,
+        ax=40,  # Shift text to the right
+        ay=0,
+        font=dict(size=12)
+    )
+    
     return fig
 
 def main():
